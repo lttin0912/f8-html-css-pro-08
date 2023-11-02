@@ -1626,6 +1626,7 @@ html.dark {
 .footer {
   margin-top: 50px;
   padding: 50px 0;
+  font-size: 1.4rem;
   background: var(--footer-bg-color);
 }
 .footer__row {
@@ -1655,7 +1656,6 @@ html.dark {
 }
 .footer__desc {
   margin-top: 30px;
-  font-size: 1.5rem;
   line-height: 1.5;
 }
 @media (max-width: 991.98px) {
@@ -1665,7 +1665,6 @@ html.dark {
 }
 .footer__help-text {
   margin-top: 40px;
-  font-size: 1.5rem;
   line-height: 1.4;
 }
 .footer__heading {
@@ -1678,7 +1677,6 @@ html.dark {
 }
 .footer__link, .footer__text {
   padding: 8px 0;
-  font-size: 1.5rem;
   line-height: 1.4;
 }
 .footer__link {
@@ -1699,7 +1697,6 @@ html.dark {
 .footer__label {
   margin-top: 20px;
   font-weight: 500;
-  font-size: 1.5rem;
 }
 .footer__form {
   display: flex;
@@ -1721,7 +1718,6 @@ html.dark {
   padding: 8px 16px;
   border-radius: 6px;
   border: 2px solid #d2d1d6;
-  font-size: 1.5em;
   font-weight: 500;
 }
 .footer__input::placeholder {
@@ -1735,6 +1731,7 @@ html.dark {
 @media (max-width: 767.98px) {
   .footer__input {
     width: 50%;
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 575.98px) {
@@ -1754,9 +1751,6 @@ html.dark {
     gap: 30px;
   }
 }
-.footer__copyright {
-  font-size: 1.4rem;
-}
 .footer__socials {
   display: flex;
   align-items: center;
@@ -1766,12 +1760,18 @@ html.dark {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border-radius: 6px;
   transition: translate, filter;
   transition-duration: 0.3s;
   filter: grayscale(50%);
+}
+@media (max-width: 575.98px) {
+  .footer__social-link {
+    width: 42px;
+    height: 42px;
+  }
 }
 .footer__social-link--facebook {
   background: #4863e9;
@@ -1795,6 +1795,11 @@ html.dark {
 .footer__social-icon {
   width: 16px;
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7482%) hue-rotate(72deg) brightness(99%) contrast(99%);
+}
+@media (max-width: 575.98px) {
+  .footer__social-icon {
+    width: 18px;
+  }
 }
 
 .logo {
@@ -2403,7 +2408,7 @@ html.dark {
 }
 @media (max-width: 575.98px) {
   .filter__form-input {
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
   }
 }
 .filter__form-select-wrap {
