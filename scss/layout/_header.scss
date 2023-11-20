@@ -35,6 +35,33 @@
 			display: block;
 		}
 	}
+
+	&__logo {
+		@include abstracts.screen(lg) {
+			column-gap: 10px !important;
+			margin-left: 50px;
+		}
+
+		@include abstracts.screen(md) {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			translate: -50% -50%;
+			margin-left: 0;
+		}
+
+		&-title {
+			@include abstracts.screen(lg) {
+				font-size: 1.8rem !important;
+			}
+		}
+
+		&-img {
+			@include abstracts.screen(lg) {
+				width: 24px;
+			}
+		}
+	}
 }
 
 .navbar {
