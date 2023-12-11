@@ -57,9 +57,23 @@ html.dark {
 	--form-placeholder-color: #b9babe;
 
 	// Product Detail
+	--product-info-container: #171c28;
 	--product-detail-bg: #292e39;
+	--product-detail-info-bg: #171c28;
+	--product-info-tag-bg: #292e39;
+	@include abstracts.screen(md) {
+		--product-detail-bg: #292e39;
+		--product-detail-info-bg: #171c28;
+	}
 
 	// Breadcrums
 	--breadcrums-bg: #171c28;
 	--breadcrums-shadow: rgba(23, 28, 40, 0.2);
+
+	@include abstracts.screen(md) {
+		--breadcrums-bg: #171c28;
+	}
+
+	// Search bar
+	--search-bar-bg: #171c28;
 }

@@ -60,8 +60,10 @@ html {
 	--form-placeholder-color: #d2d1d6;
 
 	// Product Detail
+	--product-info-container: #fff;
 	--product-detail-bg: #fff;
 	--product-detail-info-bg: #f6f6f6;
+	--product-info-tag-bg: #ededf6;
 	@include abstracts.screen(md) {
 		--product-detail-bg: #fafafd;
 		--product-detail-info-bg: #fff;
@@ -74,4 +76,7 @@ html {
 	@include abstracts.screen(md) {
 		--breadcrums-bg: #fff;
 	}
+
+	// Search bar
+	--search-bar-bg: #fff;
 }
