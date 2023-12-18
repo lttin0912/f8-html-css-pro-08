@@ -8,6 +8,7 @@ html {
 	--header-bg-color: #eee;
 	--footer-bg-color: var(--header-bg-color);
 
+	// Header
 	--top-act-group-bg-color: #fff;
 	--top-act-group-shadow: rgba(237, 237, 246, 0.2);
 	--top-act-group-separate: #ededf6;
@@ -16,6 +17,9 @@ html {
 		--header-bg-color: #fff;
 		--header-shadow-color: rgba(237, 237, 246, 0.2);
 	}
+
+	--header-act-dropdown-bg: #fff;
+	--header-act-dropdown-shadow: rgba(200, 200, 200, 0.4);
 
 	// Dropdown
 	--dropdown-bg-color: #fff;
