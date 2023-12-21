@@ -1373,6 +1373,10 @@ html {
   --search-bar-bg: #fff;
   --review-card-bg: #fafafd;
   --text-content-hr-bg: #ebebeb;
+  --checkout-cart-info-bg: #fff;
+  --checkout-cart-info-shadow: rgba(237, 237, 246, 0.2);
+  --checkout-border-color: #d2d1d6;
+  --checkout-gift-shadow: rgba(237, 237, 246, 0.2);
 }
 @media (max-width: 991.98px) {
   html {
@@ -1408,7 +1412,7 @@ html {
 }
 
 html.dark {
-  --text-color: #fff;
+  --text-color: #b9babe;
   --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7482%) hue-rotate(72deg) brightness(99%) contrast(99%);
   --body-bg: #292e39;
   --header-bg-color: #171c28;
@@ -1453,6 +1457,10 @@ html.dark {
   --search-bar-bg: #171c28;
   --review-card-bg: #171c28;
   --text-content-hr-bg: #3e4043;
+  --checkout-cart-info-bg: #171c28;
+  --checkout-cart-info-shadow: rgba(23, 28, 40, 0.2);
+  --checkout-border-color: #292e39;
+  --checkout-gift-shadow: rgba(237, 237, 246, 0);
 }
 @media (max-width: 991.98px) {
   html.dark {
@@ -3537,9 +3545,10 @@ html.dark {
   flex-direction: column;
   min-height: 80vh;
   padding-bottom: 50px;
+  color: var(--checkout-page-text-color);
 }
 .checkout-page__breadcrums {
-  background: #fff;
+  background: var(--breadcrums-bg);
 }
 
 .checkout-container {
@@ -3554,11 +3563,21 @@ html.dark {
 .cart-info {
   padding: 30px;
   border-radius: 20px;
-  background: #fff;
-  box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+  background: var(--checkout-cart-info-bg);
+  box-shadow: 0px 20px 60px 10px var(--checkout-cart-info-shadow);
+}
+@media (max-width: 767.98px) {
+  .cart-info {
+    padding: 16px;
+  }
 }
 .cart-info__list {
   margin-top: -30px;
+}
+@media (max-width: 767.98px) {
+  .cart-info__list {
+    margin-top: -16px;
+  }
 }
 .cart-info__bottom {
   margin-top: 30px;
@@ -3582,7 +3601,7 @@ html.dark {
 .cart-info__separate {
   margin: 30px 0;
   height: 1px;
-  background: #d2d1d6;
+  background: var(--checkout-border-color);
 }
 .cart-info__continue {
   display: flex;
@@ -3617,16 +3636,48 @@ html.dark {
   display: flex;
   gap: 30px;
   padding: 30px 0;
-  border-bottom: 1px solid #d2d1d6;
+  border-bottom: 1px solid var(--checkout-border-color);
+}
+@media (max-width: 767.98px) {
+  .cart-item {
+    padding: 16px 0;
+    gap: 16px;
+  }
+  .cart-item:last-child {
+    border: none;
+  }
 }
 .cart-item__thumb {
   width: 172px;
   height: 172px;
 }
+@media (max-width: 1399.98px) {
+  .cart-item__thumb {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 991.98px) {
+  .cart-item__thumb {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 767.98px) {
+  .cart-item__thumb {
+    width: 60px;
+    height: 60px;
+  }
+}
 .cart-item__content {
   flex: 1;
   display: flex;
   align-self: flex-start;
+}
+@media (max-width: 767.98px) {
+  .cart-item__content {
+    flex-direction: column;
+  }
 }
 .cart-item__content-left {
   flex: 1;
@@ -3634,6 +3685,11 @@ html.dark {
 .cart-item__content-right {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 767.98px) {
+  .cart-item__content-right {
+    margin-top: 16px;
+  }
 }
 .cart-item__title {
   max-width: 374px;
@@ -3659,10 +3715,16 @@ html.dark {
   margin-top: auto;
   min-height: 44px;
 }
+@media (max-width: 767.98px) {
+  .cart-item__ctrl--md-block {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
 .cart-item__input {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
   height: 44px;
   padding: 0 20px;
@@ -3672,14 +3734,17 @@ html.dark {
   font-weight: 500;
   line-height: 146.667%;
 }
-.cart-item__input + .cart-item__input {
-  margin-left: 20px;
-}
 .cart-item__total-price {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 145.455%;
   text-align: right;
+}
+@media (max-width: 767.98px) {
+  .cart-item__total-price {
+    margin-bottom: 16px;
+    text-align: left;
+  }
 }
 .cart-item__ctrl-btn {
   display: flex;
@@ -3707,7 +3772,7 @@ html.dark {
   height: 76px;
   border-radius: 14px;
   background: rgba(118, 68, 225, 0.1);
-  box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+  box-shadow: 0px 20px 60px 10px var(--checkout-gift-shadow);
 }
 .gift-item__title {
   font-size: 1.8rem;
