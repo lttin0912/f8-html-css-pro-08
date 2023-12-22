@@ -8,6 +8,15 @@ $error-color: #ed4337;
 		pointer-events: none;
 	}
 
+	&__row {
+		display: flex;
+		gap: 30px;
+
+		> * {
+			flex: 1;
+		}
+	}
+
 	&__group {
 		margin-top: 30px;
 
@@ -37,17 +46,39 @@ $error-color: #ed4337;
 		}
 	}
 
+	&__textarea,
 	&__text-input {
 		display: flex;
 		align-items: center;
 
-		height: 50px;
 		padding: 12px;
-		border-radius: 10px;
 		border: 1.5px solid #d2d1d6;
+		border-radius: 10px;
 
 		&:focus-within {
 			border-color: #77dae6;
+		}
+
+		&--small {
+			border-radius: 8px;
+		}
+	}
+
+	&__textarea {
+		height: 100px;
+		padding: 12px;
+
+		&-input {
+			width: 100%;
+			resize: none;
+		}
+	}
+
+	&__text-input {
+		height: 50px;
+
+		&--small {
+			height: 42px;
 		}
 
 		@include abstracts.screen(md) {
@@ -55,6 +86,7 @@ $error-color: #ed4337;
 		}
 	}
 
+	&__textarea-input,
 	&__input {
 		flex: 1;
 		height: 100%;
@@ -67,12 +99,14 @@ $error-color: #ed4337;
 			color: var(--form-placeholder-color);
 		}
 
-		&-icon {
-			margin-left: 12px;
-		}
-
 		@include abstracts.screen(md) {
 			font-size: 1.6rem;
+		}
+	}
+
+	&__input {
+		&-icon {
+			margin-left: 12px;
 		}
 	}
 
