@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-	<!-- <html lang="en" class="dark"> -->
+<!-- <html lang="en"> -->
+<html lang="en" class="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -367,12 +367,12 @@
 		</div>
 
 		<!-- Modal: add a new address -->
-		<div class="modal hide" id="add-new-address" style="--content-width: 650px">
+		<div class="modal show" id="add-new-address" style="--content-width: 650px">
 			<div class="modal__content">
-				<button class="modal__close js-toggle" toggle-target="#add-new-address">&times;</button>
-				<h2 class="modal__heading">Add new shopping address</h2>
-				<div class="modal__body">
-					<form action="" class="form">
+				<form action="" class="form" autocomplete="off">
+					<button class="modal__close js-toggle" toggle-target="#add-new-address">&times;</button>
+					<h2 class="modal__heading">Add new shipping address</h2>
+					<div class="modal__body">
 						<div class="form__row">
 							<div class="form__group">
 								<label for="name" class="form__label form__label--small">Name</label>
@@ -413,12 +413,12 @@
 								<span class="form__checkbox-label">Set as default address</span>
 							</label>
 						</div>
-					</form>
-				</div>
-				<div class="modal__bottom">
-					<button class="btn btn--text modal__btn js-toggle" toggle-target="#add-new-address">Cancel</button>
-					<button class="btn btn--primary btn--small btn--no-margin modal__btn js-toggle" toggle-target="#add-new-address">Create</button>
-				</div>
+					</div>
+					<div class="modal__bottom">
+						<button class="btn btn--text modal__btn js-toggle" toggle-target="#add-new-address">Cancel</button>
+						<button class="btn btn--primary btn--small btn--no-margin modal__btn js-toggle" toggle-target="#add-new-address">Create</button>
+					</div>
+				</form>
 			</div>
 			<div class="modal__overlay"></div>
 		</div>
