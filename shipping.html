@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- <html lang="en"> -->
-<html lang="en" class="dark">
+<html lang="en">
+	<!-- <html lang="en" class="dark"> -->
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -402,8 +402,42 @@
 						<div class="form__group">
 							<label for="city" class="form__label form__label--small">City/District/Town</label>
 							<div class="form__text-input form__text-input--small">
-								<input type="text" name="city" id="city" placeholder="City/District/Town" class="form__input" />
+								<input
+									type="text"
+									name="city"
+									id="city"
+									placeholder="City/District/Town"
+									class="form__input js-toggle"
+									toggle-target="#city-dialog"
+								/>
 								<img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+
+								<div id="city-dialog" class="form__select-dialog hide">
+									<div class="form__search">
+										<input class="form__search-input" placeholder="Search" />
+										<img src="./assets/icons/search.svg" alt="" class="form__search-icon" />
+									</div>
+									<ul class="form__options-list">
+										<li class="form__option">Ha Noi</li>
+										<li class="form__option form__option--current">Ho Chi Minh</li>
+										<li class="form__option">Da Nang</li>
+										<li class="form__option">Ha Noi</li>
+										<li class="form__option">Ho Chi Minh</li>
+										<li class="form__option">Da Nang</li>
+										<li class="form__option">Ha Noi</li>
+										<li class="form__option">Ho Chi Minh</li>
+										<li class="form__option">Da Nang</li>
+										<li class="form__option">Ha Noi</li>
+										<li class="form__option">Ho Chi Minh</li>
+										<li class="form__option">Da Nang</li>
+										<li class="form__option">Ha Noi</li>
+										<li class="form__option">Ho Chi Minh</li>
+										<li class="form__option">Da Nang</li>
+										<li class="form__option">Ha Noi</li>
+										<li class="form__option">Ho Chi Minh</li>
+										<li class="form__option">Da Nang</li>
+									</ul>
+								</div>
 							</div>
 							<p class="form__error">City/District/Town is required</p>
 						</div>
