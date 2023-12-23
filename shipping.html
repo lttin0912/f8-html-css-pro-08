@@ -37,7 +37,7 @@
 					<div class="search-bar d-none d-md-flex">
 						<input type="text" class="search-bar__input" placeholder="Search for item" />
 						<button class="search-bar__submit">
-							<img src="./assets/icons/search.svg" alt="" class="search-bar__icon" />
+							<img src="./assets/icons/search.svg" alt="" class="search-bar__icon icon" />
 						</button>
 					</div>
 				</div>
@@ -49,7 +49,7 @@
 						<li>
 							<a href="./" class="breadcrums__link">
 								Home
-								<img src="./assets/icons/arrow-right.svg" alt="" />
+								<img src="./assets/icons/arrow-right.svg" alt="" class="icon" />
 							</a>
 						</li>
 						<li>
@@ -413,9 +413,10 @@
 								<img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
 
 								<div id="city-dialog" class="form__select-dialog hide">
+									<button class="form__close-dialog d-none d-sm-block js-toggle" toggle-target="#city-dialog">&times;</button>
 									<div class="form__search">
 										<input class="form__search-input" placeholder="Search" />
-										<img src="./assets/icons/search.svg" alt="" class="form__search-icon" />
+										<img src="./assets/icons/search.svg" alt="" class="form__search-icon icon" />
 									</div>
 									<ul class="form__options-list">
 										<li class="form__option">Ha Noi</li>
