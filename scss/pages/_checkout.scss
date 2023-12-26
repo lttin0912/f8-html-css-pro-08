@@ -34,6 +34,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		gap: 30px;
 	}
 
 	&__heading {
@@ -159,6 +160,11 @@
 				content: url("../icons/checkbox-checked.svg");
 			}
 		}
+	}
+
+	&__form-row {
+		flex-direction: row;
+		gap: 20px;
 	}
 }
 
@@ -440,7 +446,11 @@
 	margin-top: 30px;
 	padding: 20px;
 	border-radius: 20px;
-	background: #f6f6f6;
+background: var(--checkout-payment-item-bg);
+
+	@include abstracts.screen(md) {
+		align-items: flex-start;
+	}
 
 	&--pointer {
 		cursor: pointer;
@@ -453,6 +463,19 @@
 	}
 
 	&__content {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		flex: 1;
+
+		@include abstracts.screen(md) {
+			align-items: flex-start;
+			flex-direction: column;
+			gap: 16px;
+		}
+	}
+
+	&__info {
 		flex: 1;
 	}
 
