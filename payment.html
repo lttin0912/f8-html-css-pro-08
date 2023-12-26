@@ -143,6 +143,52 @@
 						<div class="col-4 col-xl-12">
 							<div class="cart-info">
 								<h2 class="cart-info__heading cart-info__heading--lv2">Payment Details</h2>
+								<p class="cart-info__desc">Complete your purchase item by providing your payment details order.</p>
+								<form action="" class="form cart-info__form" autocomplete="off">
+									<div class="form__group">
+										<label class="form__label form__label--medium">Email Address</label>
+										<div class="form__text-input">
+											<input type="email" name="email" id="email" placeholder="Email" class="form__input" required />
+											<img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+										</div>
+										<p class="form__error">Email is required</p>
+									</div>
+
+									<div class="form__group">
+										<label for="card-holder" class="form__label form__label--medium">Card Holder</label>
+										<div class="form__text-input">
+											<input type="text" name="card-holder" id="card-holder" placeholder="Card Holder" class="form__input" required />
+											<img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+										</div>
+										<p class="form__error">Card Holder is required</p>
+									</div>
+
+									<div class="form__group">
+										<label class="form__label form__label--medium" for="cart-details">Card Details</label>
+										<div class="form__text-input">
+											<input type="text" name="cart-details" id="cart-details" placeholder="Card Details" class="form__input" required />
+											<img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+										</div>
+										<p class="form__error">Card Details is required</p>
+									</div>
+
+									<div class="form__row">
+										<div class="form__group">
+											<div class="form__text-input">
+												<input type="text" name="card-expired" id="card-expired" placeholder="MM/YY" class="form__input" required />
+												<img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+											</div>
+											<p class="form__error">MM/YY is required</p>
+										</div>
+										<div class="form__group">
+											<div class="form__text-input">
+												<input type="text" name="card-cvc" id="card-cvc" placeholder="CVC" class="form__input" required />
+												<img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+											</div>
+											<p class="form__error">CVC is required</p>
+										</div>
+									</div>
+								</form>
 								<div class="cart-info__row">
 									<span>Subtotal <span class="cart-info__sub-label">(items)</span></span>
 									<span>3</span>
@@ -161,19 +207,6 @@
 									<span>$201.65</span>
 								</div>
 								<a href="#!" class="btn btn--primary btn--rounded cart-info__checkout-btn">Pay $465.98</a>
-							</div>
-							<div class="cart-info">
-								<a href="#!">
-									<article class="gift-item">
-										<div class="gift-item__icon-wrap">
-											<img src="./assets/icons/gift.svg" alt="" class="gift-item__icon" />
-										</div>
-										<div class="gift-item__content">
-											<h3 class="gift-item__title">Send this order as a gift.</h3>
-											<p class="gift-item__desc">Available items will be shipped to your gift recipient.</p>
-										</div>
-									</article>
-								</a>
 							</div>
 						</div>
 					</div>
