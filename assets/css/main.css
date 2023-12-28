@@ -4318,6 +4318,9 @@ html.dark {
   color: #9e9da8;
 }
 
+.profile {
+  margin-bottom: 50px;
+}
 .profile-container {
   margin-top: 30px;
 }
