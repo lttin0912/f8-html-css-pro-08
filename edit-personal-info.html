@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Add New Card | Grocery Mart</title>
+		<title>Edit Personal Info | Grocery Mart</title>
 
 		<!-- Favicon -->
 		<link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png" />
@@ -163,7 +163,7 @@
 										<h2 class="cart-info__heading">
 											<a href="./profile.html">
 												<img src="./assets/icons/arrow-left.svg" alt="" class="cart-info__back-arrow icon" />
-												Add credit or debit card
+												Personal info
 											</a>
 										</h2>
 
@@ -171,90 +171,46 @@
 											<!-- Form row 1 -->
 											<div class="form__row">
 												<div class="form__group">
-													<label for="first-name" class="form__label form-card__label">First Name</label>
+													<label for="full-name" class="form__label form-card__label">Full Name</label>
 													<div class="form__text-input">
 														<input
 															type="text"
-															name="first-name"
-															id="first-name"
-															placeholder="First Name"
+															name="full-name"
+															id="full-name"
+															placeholder="Full Name"
 															class="form__input"
 															required
 															autofocus
 														/>
 														<img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
 													</div>
-													<p class="form__error">First Name at is invalid</p>
+													<p class="form__error">Full Name at is invalid</p>
 												</div>
 
 												<div class="form__group">
-													<label for="last-name" class="form__label form-card__label">Last Name</label>
+													<label for="email-address" class="form__label form-card__label">Email address</label>
 													<div class="form__text-input">
 														<input
-															type="text"
-															name="last-name"
-															id="last-name"
-															placeholder="Last Name"
+															type="email"
+															name="email-address"
+															id="email-address"
+															placeholder="Email address"
 															class="form__input"
 															required
 														/>
 														<img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
 													</div>
-													<p class="form__error">Last Name at is invalid</p>
+													<p class="form__error">Email address at is invalid</p>
 												</div>
 											</div>
 
 											<!-- Form row 2 -->
 											<div class="form__row">
 												<div class="form__group">
-													<label for="card-number" class="form__label form-card__label">Card Number</label>
-													<div class="form__text-input">
-														<input
-															type="text"
-															name="card-number"
-															id="card-number"
-															placeholder="Card Number"
-															class="form__input"
-															required
-														/>
-														<img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
-													</div>
-													<p class="form__error">Card Number at is invalid</p>
-												</div>
-
-												<div class="form__group">
-													<label for="expiration-date" class="form__label form-card__label">Expiration Date</label>
-													<div class="form__text-input">
-														<input
-															type="text"
-															name="expiration-date"
-															id="expiration-date"
-															placeholder="MM/YY"
-															class="form__input"
-															required
-														/>
-														<img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
-													</div>
-													<p class="form__error">Expiration Date at is invalid</p>
-												</div>
-											</div>
-
-											<!-- Form row 3 -->
-											<div class="form__row">
-												<div class="form__group">
-													<label for="cvv" class="form__label form-card__label">CVV</label>
-													<div class="form__text-input">
-														<input type="text" name="cvv" id="cvv" placeholder="CVV" class="form__input" required />
-														<img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
-													</div>
-													<p class="form__error">CVV is invalid</p>
-												</div>
-
-												<div class="form__group">
 													<label for="phone-number" class="form__label form-card__label">Phone Number</label>
 													<div class="form__text-input">
 														<input
-															type="text"
+															type="tel"
 															name="phone-number"
 															id="phone-number"
 															placeholder="Phone Number"
@@ -263,16 +219,24 @@
 														/>
 														<img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
 													</div>
-													<p class="form__error">Phone Number is invalid</p>
+													<p class="form__error">Phone Number at is invalid</p>
 												</div>
-											</div>
 
-											<div class="form__group">
-												<label for="default-card" class="form__label form-card__label">Card Preferences</label>
-												<label class="form__checkbox">
-													<input type="checkbox" name="default-card" id="default-card" class="form__checkbox-input d-none" checked />
-													<span class="form__checkbox-label">Set as default card</span>
-												</label>
+												<div class="form__group">
+													<label for="password" class="form__label form-card__label">Password</label>
+													<div class="form__text-input">
+														<input
+															type="password"
+															name="password"
+															id="password"
+															placeholder="Password"
+															class="form__input"
+															required
+														/>
+														<img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+													</div>
+													<p class="form__error">Password at is invalid</p>
+												</div>
 											</div>
 
 											<div class="form-card__bottom">
